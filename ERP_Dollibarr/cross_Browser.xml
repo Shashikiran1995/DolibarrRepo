@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+<listeners>
+	<listener class-name="com.Dollibarr.generic.ListenerUtility.ListenerImplimentation"></listener>
+</listeners>
+  <test name="Test-chrome">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="com.ERP.Dollibarr.ThirdParty.CreateThirdPartyTest"/>
+      <class name="com.ERP.Dollibarr.UsersAndGroups.UsersAndGroupsTest"/>
+      <class name="com.ERP.Dollibarr.Members.CreateMemberTest"/>
+      <class name="com.ERP.Dollibarr.HRM.ApplyLeaveTest"/>
+      <class name="com.ERP.Dollibarr.Commerce.PurchaseOrderTest"/>
+      <class name="com.ERP.Dollibarr.ThirdParty.CreateContactsOrAddressesTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test-edge">
+  <parameter name="BROWSER" value="edge"></parameter>
+    <classes>
+      <class name="com.ERP.Dollibarr.ThirdParty.CreateThirdPartyTest"/>
+      <class name="com.ERP.Dollibarr.UsersAndGroups.UsersAndGroupsTest"/>
+      <class name="com.ERP.Dollibarr.Members.CreateMemberTest"/>
+      <class name="com.ERP.Dollibarr.HRM.ApplyLeaveTest"/>
+      <class name="com.ERP.Dollibarr.Commerce.PurchaseOrderTest"/>
+      <class name="com.ERP.Dollibarr.ThirdParty.CreateContactsOrAddressesTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Test-firefox">
+  <parameter name="BROWSER" value="firefox"></parameter>
+    <classes>
+      <class name="com.ERP.Dollibarr.ThirdParty.CreateThirdPartyTest"/>
+      <class name="com.ERP.Dollibarr.UsersAndGroups.UsersAndGroupsTest"/>
+      <class name="com.ERP.Dollibarr.Members.CreateMemberTest"/>
+      <class name="com.ERP.Dollibarr.HRM.ApplyLeaveTest"/>
+      <class name="com.ERP.Dollibarr.Commerce.PurchaseOrderTest"/> 
+      <class name="com.ERP.Dollibarr.ThirdParty.CreateContactsOrAddressesTest"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
